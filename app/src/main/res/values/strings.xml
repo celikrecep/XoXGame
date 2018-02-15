@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">XoXGame</string>
+    <string name="alert_message">Oyun bitti yeniden başlamak ister misiniz?</string>
+    <string name="alert_positive">Evet</string>
+    <string name="alert_negative">Hayır</string>
+</resources>

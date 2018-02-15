@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.loyer.xoxgame.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+
+            android:id="@+id/btn1"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+            />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn4"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+        <Button
+            android:id="@+id/btn5"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+        <Button
+            android:id="@+id/btn6"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn7"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+        <Button
+            android:id="@+id/btn8"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+        <Button
+            android:id="@+id/btn9"
+            style="@style/butonStyle"
+            android:onClick="clickCell"
+
+
+            />
+
+    </TableRow>
+
+</TableLayout>
