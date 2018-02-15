@@ -15,12 +15,14 @@ class MainActivity : AppCompatActivity() {
     var player2 = ArrayList<Int>()
     var allButtons = ArrayList<Button>()
     var activePlayer = 1
+    var player1Count = 0
+    var player2Count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
+    //when the button is pressed
     fun clickCell(view : View){
 
         var selectedButton = view as Button
@@ -72,6 +74,10 @@ class MainActivity : AppCompatActivity() {
                 || list.containsAll(listOf(3,6,9)) || list.containsAll(listOf(4,5,6))
                 || list.containsAll(listOf(7,8,9)) || list.containsAll(listOf(3,5,7))){
             winner = activePlayer
+            if(winner == 1) player1Count ++
+            else player2Count ++
+            txtPlayer1.text ="Player1 : $player1Count"
+            txtPlayer2.text = "Player2 : $player2Count"
             alert(winner.toString())
 
         }
@@ -87,9 +93,10 @@ class MainActivity : AppCompatActivity() {
         alert.setPositiveButton(R.string.alert_positive){
             dialogInterface, i -> // refreshing method been called
             refresh()
+
         }
         alert.setNegativeButton(R.string.alert_negative){
-            dialogInterface, i ->
+            dialogInterface, i -> //exit
             System.exit(1)
 
         }
@@ -99,11 +106,16 @@ class MainActivity : AppCompatActivity() {
         //refreshing the clicked buttons
     fun refresh(){
 
-    for (x in allButtons){
-        x.setBackgroundResource(R.drawable.button)
-        x.text = ""
+         for (button in allButtons) {
+        button.setBackgroundResource(R.drawable.button)
+        button.text = ""
+        button.isClickable = true
+
+
     }
 
+        player2.clear()
+        player1.clear()
     }
 
 

@@ -3,4 +3,6 @@
     <string name="alert_message">Oyun bitti yeniden başlamak ister misiniz?</string>
     <string name="alert_positive">Evet</string>
     <string name="alert_negative">Hayır</string>
+    <string name="player1">Player1 :</string>
+    <string name="player2">Player2 :</string>
 </resources>
